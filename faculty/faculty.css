@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 header img {
   height: 80px;
   margin-left: 40px;
@@ -8,8 +12,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: sans-serif;
-  margin-top: 80px;
-  padding: 20px;
 }
 
 main {
@@ -18,7 +20,7 @@ main {
 
 header {
   background-color: white;
-  position: fixed;
+
   top: 0;
   left: 0;
   right: 0;
@@ -129,11 +131,11 @@ i {
 
 .container-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .container-box2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 h1 {
   text-align: center;
@@ -147,6 +149,7 @@ h1 {
   width: fit-content;
 }
 #head1 {
+  margin: 2%;
   display: flex;
   justify-content: center;
 }
