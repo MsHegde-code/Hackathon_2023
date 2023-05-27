@@ -10,12 +10,18 @@ header img {
   margin-left: 40px;
 }
 body {
-  height: 125vh;
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/lightbg.jpg");
   background-size: cover;
   font-family: sans-serif;
-  margin-top: 80px;
-  padding: 30px;
+  color: black;
+  margin-top: 100px;
+}
+
+body.active {
+  color: white;
+  background-image: url("../images/bg1.webp");
+  font-family: sans-serif;
+  margin-top: 100px;
 }
 
 main {
@@ -59,6 +65,7 @@ header li a {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  background: none;
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -120,4 +127,11 @@ i {
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+}
+
+.btnTheme button {
+  background: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 80px;
 }

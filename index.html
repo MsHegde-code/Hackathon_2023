@@ -12,6 +12,7 @@
     ></script>
     <link rel="stylesheet" href="carousel.css" />
     <script defer src="carousel.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
@@ -34,6 +35,9 @@
           </li>
         </ul>
       </nav>
+      <div class="btnTheme">
+        <button id="theme" onclick="change_theme()">Dark</button>
+      </div>
     </header>
     <div class="content-items">
       <div class="carousel">
@@ -72,7 +76,7 @@
       </div>
     </div>
     <div class="form-cont">
-      <form>
+      <form id="form">
         <h2>ADMISSION FORM</h2>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
@@ -96,7 +100,7 @@
     </div>
   
   <div class="prog">
-    <section>
+    <section id="prog">
       <h2>Bootstrap 2022 - Welcome Program for Freshers</h2>
       <p>
         Our University, located in Bangalore, India is one of the country's
@@ -109,7 +113,7 @@
       </p>
     </section>
     <br>
-    <section class="sec2">
+    <section class="sec2" id="sec2">
       <h2>Job Offering</h2>
       <p>
         We are excited to announce a job offering at our institution for the position of <span class="highlight">Software Developer</span>. As a Software Developer, you will have the opportunity to work on cutting-edge projects and contribute to the development of innovative software solutions.
@@ -133,7 +137,7 @@
   <div class="formbold-main-wrapper">
     <!-- Author: FormBold Team -->
     <!-- Learn More: https://formbold.com -->
-    <div class="formbold-form-wrapper">
+    <div class="formbold-form-wrapper" id="left_box">
       <div class="formbold-form-title">
           <h3>Subscribe Now to Get Our Latest Updates!</h3>
           <p>Sign up the newsletter to get the Latest updates about our college and about the exciting events.</p>
@@ -161,10 +165,7 @@
         <div class="about-us">
           <h3>About Us</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            nec faucibus ex. Sed id risus ut ipsum aliquet tempus. Integer sed
-            malesuada mauris. Quisque congue consectetur tortor, id molestie mi
-            scelerisque at.
+            At our University, we pride ourselves on providing exceptional education and fostering a dynamic learning community. With a rich history of academic excellence and a commitment to innovation, we strive to empower our students with the knowledge and skills they need to thrive in a rapidly evolving world. Our distinguished faculty members are leaders in their respective fields, dedicated to delivering high-quality instruction and engaging students in transformative learning experiences. They are passionate about mentoring and guiding students to unlock their full potential, both inside and outside the classroom. As an institution, we are committed to promoting diversity, inclusion, and equity. We believe that a diverse community enriches the educational experience and prepares our students to navigate a globalized society. We actively foster an inclusive environment where individuals from all backgrounds feel valued, respected, and supported.
           </p>
         </div>
         <br />
