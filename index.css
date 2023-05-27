@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 header img {
   height: 80px;
   margin-left: 40px;
@@ -7,8 +11,6 @@ body {
   background-image: url("../images/bg.jpg");
   background-size: cover;
   font-family: sans-serif;
-  margin-top: 80px;
-  padding: 30px;
 }
 
 main {
@@ -17,7 +19,6 @@ main {
 
 header {
   background-color: white;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -87,6 +88,7 @@ i {
 }
 
 .carousel {
+  margin-top: 4%;
   width: 300px; /* Adjust the width as needed */
   overflow: hidden;
 }
@@ -99,9 +101,16 @@ i {
 .item {
   flex: 0 0 100%; /* Make each slide take up the full width */
   text-align: center;
+  border-radius: 8px;
   /* Additional styling for each slide */
 }
-.item img {
-  width: 500px;
-  height: auto;
+
+.item figure img {
+  width: 450px;
+  height: 250px;
+}
+.item figcaption {
+  text-align: center;
+  font-weight: 500;
+  font-size: x-large;
 }
