@@ -9,7 +9,7 @@ header img {
 body {
   height: 125vh;
   background-image: url("../images/bg.jpg");
-  background-size: cover;
+  background-size: contain;
   font-family: sans-serif;
 }
 
@@ -106,8 +106,8 @@ i {
 }
 
 .item figure img {
-  width: 450px;
-  height: 250px;
+  width: 650px;
+  height: 350px;
 }
 .item figcaption {
   text-align: center;
@@ -165,4 +165,184 @@ ul.social-media a {
 
 ul.social-media a:hover {
   color: #333;
+}
+
+/* CSS styling for the form */
+.form-cont {
+  margin: 2%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px rgb(202, 152, 0) solid;
+  background-color: #c3c3c3;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 5%;
+}
+form h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: large;
+  margin: 2%;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.sub {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.prog {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  width: 100%;
+  margin: 2%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.sec2 {
+  width: 100%;
+  margin: 2%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sec2 h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.sec2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #0066cc;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 2%;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: white;
+}
+
+.formbold-form-title {
+  margin-bottom: 40px;
+}
+.formbold-form-title h3 {
+  color: #07074d;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  margin: 2%;
+}
+.formbold-form-title p {
+  font-size: 16px;
+  color: #536387;
+  text-align: center;
+  margin: 2%;
+}
+.formbold-form-input {
+  text-align: center;
+  width: 100%;
+  padding: 14px 22px;
+  border-radius: 6px;
+  border: 1px solid #dde3ec;
+  background: #fafafa;
+  font-weight: 500;
+  font-size: 16px;
+  color: #536387;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #6a64f1;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 14px 25px;
+  border: none;
+  font-weight: 500;
+  background-color: #6a64f1;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
