@@ -85,3 +85,23 @@ header li a {
 i {
   margin: 2%;
 }
+
+.carousel {
+  width: 300px; /* Adjust the width as needed */
+  overflow: hidden;
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item {
+  flex: 0 0 100%; /* Make each slide take up the full width */
+  text-align: center;
+  /* Additional styling for each slide */
+}
+.item img {
+  width: 500px;
+  height: auto;
+}
