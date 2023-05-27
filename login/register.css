@@ -1,132 +1,185 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Work Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-a {
-  text-decoration: none;
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(left,#48c6ef, #6f86d6);
 }
-.form-2 {
-  margin: auto;
-  margin-bottom: 20px;
-  max-width: 350px;
+::selection{
+  background: #fa4299;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
   padding: 30px;
-  border: 2px black solid;
-  border-color: #2f9732;
-  box-shadow: 10px 10px 8px 10px #888888;
-  border-radius: 8px;
-  display: block;
-  margin-top: 50px;
-  background-color: beige;
-}
-form {
-  margin: 2%;
-  padding: 10px;
-}
-body {
-  height: 125vh;
-  background-image: url("https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg");
-  background-size: cover;
-  font-family: sans-serif;
-  margin-top: 80px;
-  padding: 30px;
-}
-h3 {
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
   border-radius: 5px;
-  background-color: darkgoldenrod;
-  color: aliceblue;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
 }
-.name {
-  display: block;
-  justify-content: center;
-}
-.email-grp input {
-  height: 30px;
-  width: 304px;
-  display: inline-block;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-.name label {
-  display: block;
-}
-.form-2 label[for="email"] {
-  display: block;
-}
-.form-2 label[for="password"] {
-  display: block;
-}
-.name input {
-  width: 150px;
-  height: 30px;
-  border-radius: 5px;
-  display: inline-block;
-  box-sizing: border-box;
-}
-
-.city-phone-container {
+.wrapper .title-text{
   display: flex;
+  width: 200%;
 }
-#usnNum {
-  height: 30px;
-  width: 304px;
-  display: inline-block;
-  box-sizing: border-box;
-  border-radius: 4px;
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
-.phone input {
-  display: block;
-  box-sizing: border-box;
-  border-radius: 5px;
-  height: 30px;
-  width: 150px;
-  margin-right: 4px;
-}
-.dob-sex-ph {
+.wrapper .slide-controls{
+  position: relative;
   display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
   justify-content: space-between;
-  width: 304px;
-}
-.dob input {
-  box-sizing: border-box;
+  border: 1px solid lightgrey;
   border-radius: 5px;
-  display: block;
-  height: 30px;
-  width: 130px;
-  text-align: center;
-  margin-right: 4px;
 }
-.submit {
-  display: flex;
-  justify-content: center;
-}
-.submit button {
-  border: none;
-  color: white;
-  padding: 10px 25px;
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
+  line-height: 48px;
   cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid darkgoldenrod;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+  color: #000;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
   border-radius: 5px;
+  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
+  background: -webkit-linear-gradient(left,#48c6ef, #6f86d6);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
-
-.submit button:hover {
-  background-color: darkgoldenrod;
-  color: white;
+input[type="radio"]{
+  display: none;
 }
-
-.existing-user {
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login{
+  color: #000;
+}
+#login:checked ~ label.signup{
+  color: #000;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
   display: flex;
-  justify-content: center;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: #fc83bb;
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #fa4299;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right,#48c6ef, #6f86d6, #48c6ef, #6f86d6);
+  border-radius: 5px;
+  transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 header {
@@ -153,10 +206,7 @@ header li a {
   color: black;
   text-decoration: none;
 }
-header img {
-  height: 80px;
-  margin-left: 40px;
-}
+
 /* drop down for student/teacher*/
 .dropdown {
   position: relative;
@@ -168,7 +218,6 @@ header img {
   padding: 10px;
   font-size: 16px;
   border: none;
-  background-color: #f1f1f1;
   cursor: pointer;
 }
 
