@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/d851cbc333.js" crossorigin="anonymous"></script>
+    <title>register Page</title>
+  </head>
+  <body>
+    <header>
+        <i class="fa-solid fa-school"></i>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="">Dept</a></li>
+          <li><a href="#">Teacher</a></li>
+          <li><a href="#">Student</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><div class="dropdown">
+            <button>Sign-IN</button>
+            <div class="dropdown-content">
+              <a href="register-teacher.html">Teacher</a>
+              <a href="register-student.html">Student</a>
+            </div>
+          </div>
+          
+        </li>
+        </ul>
+      </nav>
+    </header>
+    <link rel="stylesheet" href="register.css" />
+    <div class="form-2">
+      <h3>Student Sign-up</h3>
+      <form class="form" action="register.php" method="post">
+        <div class="name">
+          <label for="name">Name</label>
+          <input id="fname" type="text" placeholder="  First Name" />
+          <input id="lname" type="text" placeholder="  Last Name" />
+          <br />
+          <br />
+        </div>
+        <div class="email-grp">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="  youremail@domain.com"
+          />
+          <br /><br />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="pass"
+            id="password"
+            placeholder="  •••••••• "
+          />
+          <br />
+          <br>
+          <div id="usnNum">
+            <label for="usn">USN</label>
+            <input type="text" id="usn">
+          </div>
+          <br />
+          <br>
+        </div>
+        <div class="dob-sex-ph">
+          <div class="gender">
+            <label for="gender">Gender</label>
+            <br>
+              <input type="radio" name="gender-male" id="gender-male" />Male
+              <br>
+              <input
+                type="radio"
+                name="gender-female"
+                id="gender-femalex"
+              />Female
+            </select>
+          </div>
+          <div class="phone">
+            <label for="ph">Phone</label>
+            <input id="phone" type="text" />
+          </div>
+        </div>
+        <br />
+        <div class="submit">
+          <button type="submit">SIGN UP</button>
+        </div>
+        <br />
+        <div class="existing-user">
+          <label for="existing-user">Already registered ??</label>
+          <a href="../index.html">Click here</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
