@@ -1,8 +1,8 @@
 // JavaScript code for modifying the page dynamically
 // Example: Change the header background color on mouseover
-var header = document.querySelector('header');
+var header = document.getElementById('idh1');
 
-header.addEventListener('mouseover', function() {
+header.addEventListener('mouseover', function () {
   header.style.backgroundColor = getRandomColor();
 });
 
