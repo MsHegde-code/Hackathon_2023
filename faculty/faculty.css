@@ -11,12 +11,14 @@ body {
   background-size: cover;
   font-family: sans-serif;
   color: black;
+  height: 125vh;
 }
 
 body.active {
   color: white;
   background-image: url("../images/bg1.webp");
   font-family: sans-serif;
+  height: 125vh;
 }
 main {
   color: white;
